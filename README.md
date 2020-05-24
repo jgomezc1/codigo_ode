@@ -1,6 +1,6 @@
 # codigo_ode
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AppliedMechanics-EAFIT/Introductory-Finite-Elements/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jgomezc1/codigo_ode/master)
 Bistable dissipation device
 
 ## Introduction
