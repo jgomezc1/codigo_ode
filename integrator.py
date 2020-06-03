@@ -78,3 +78,14 @@ def dissip_device(z , t , M , C , K , sismo , m , c , k , F_0 , fac , lmda):
     dzdt = [dUdt , dVdt , dudt , dvdt]
     
     return dzdt
+
+def plot_misses(F_0 , lmda , ndats , fac):
+    fac   = 1.0                                 #Piecewise continous at fac*lambda
+    x  = np.linspace(-2*lmda , 2*lmda, ndats)   #Assumed displacements span
+    n = len(x)
+    FM = np.zeros(n)
+#
+    for i in range(n):
+        FM[i] = misses(F_0 , fac , lmda , x[i])
+    
+    return FM , x
